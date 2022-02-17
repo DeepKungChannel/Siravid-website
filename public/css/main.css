@@ -274,6 +274,11 @@ nav {
     border-radius: 2px;
 }
 
+.smilewin-img img{
+    object-fit: contain;
+    height: 16rem;
+}
+
 .project-item > .card {
     background: rgb(216, 216, 216);
     border-radius: 15px;
@@ -552,6 +557,10 @@ footer .container {
         height: 45rem;
     }
 
+    .smilewin-img img {
+        object-fit: contain;
+        height: 8.4rem;
+    }
     
 
     footer {
