@@ -18,11 +18,3 @@ nav_link.addEventListener('click', () => {
     nav_link.classList.add('hide');
   }
 })
-
-// for (var i = link.length - 1; i >= 0; i--) {
-//   link[i].addEventListener('click', () => {
-//     bar.classList.toggle('show');
-//     x.classList.toggle('show');
-//     nav_link.classList.toggle('hide'); 
-//   })
-// }
