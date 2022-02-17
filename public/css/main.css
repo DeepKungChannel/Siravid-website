@@ -1,0 +1,560 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'Sedan Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Sedan Regular'), url('Sedan-Regular.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: 'Sedan Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Sedan Italic'), url('Sedan-Italic.woff') format('woff');
+}
+
+.container {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+
+nav {
+    background: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav_wrapper {
+    height: 3rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav_title {
+    padding-left: 1.6rem;
+}
+
+.nav_link {
+    display: flex;
+    justify-content: space-around;
+    color: #333;
+}
+
+.nav_link li {
+    list-style: none;
+    padding-right : 1.5rem;
+}
+
+.nav_wrapper a {
+    color: #333;
+    text-decoration: none;
+}
+
+.welcome {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    place-items: center;
+    padding-top: 3rem;
+    height: 35rem;
+    width: 100%;
+    font-family: 'Sedan Regular';
+}
+
+.welcome-text .title {
+    font-size: 2rem;
+}
+
+.welcome-text p {
+    font-size: 1.2rem;
+    padding-top: 1.3rem;
+}
+
+.mypic img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+.about-me {
+    background: #333;
+    height: 25rem;
+    display: flex;
+}
+
+.about-me_wrap {
+    /* padding-top: 6rem; */
+    color: #fff;
+    width: 50rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.about-me h3 {
+    font-weight: normal;
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Sedan Regular';
+    font-weight: 400;
+}
+
+.about-me p {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.skills {
+    height: 40rem;
+}
+
+.skills_wrap {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 65rem;
+    margin: 0 auto;
+}
+
+.skills_wrap h3 {
+    text-align: center;
+    font-size: 35px;
+    padding-top: 4.5rem;
+    padding-bottom: 3rem;
+    font-family: 'Sedan Regular';
+}
+
+.skills-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    place-items: center;
+    padding-top: 4rem;
+    width: 100%;
+}
+
+.skills-item .card {
+    height: 12rem;
+    background: #333;
+    border-radius: 25px;
+    width: 10rem;
+}
+
+.skills-item .card {
+    position: relative;
+}
+
+.skills-item .card p {
+    position: absolute;
+    bottom: 1.1rem;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.img {
+    width: 100%;
+}
+
+.python-img {
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.java-img {
+    width: 100%;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+.java-img img{
+    border-radius: 25px;
+    width: 110px;
+    height: 113px;
+    object-fit: cover;
+}
+
+.javascript-img {
+    width: 100%;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+.javascript-img img{
+    width: 110px;
+    height: 110px;
+    border-radius: 25px;
+}
+
+.c-img {
+    width: 100%;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.c-img img {
+    width: 130px;
+}
+
+
+.project {
+    background: #333;
+}
+
+.project_wrap {
+    height: 58rem;
+    padding-top: 5rem;
+    color: #fff;
+}
+
+.project .project-title {
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Sedan Regular';
+}
+
+.project-item {
+    padding-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    place-items: center;
+    row-gap: 2rem;
+}
+
+.project-item .card {
+    height: 18rem;
+    position: relative;
+    color: #000;
+    
+}
+
+.project-item .card a {
+    color: #000;
+}
+
+.project-item .card p {
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 20px;
+    position: absolute;
+    bottom: 1.5rem;
+    width: 100%;
+}
+
+.project-img {
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+.project-img img {
+    object-fit: cover;
+    width: 450px;
+    border-radius: 2px;
+}
+
+.project-item > .card {
+    background: rgb(216, 216, 216);
+    border-radius: 15px;
+    width: 500px;
+    height: 350px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.project-item > .card:hover{
+    transform: translateY(-10px)
+}
+
+.digit_cnn {
+    padding-top: 2.3rem;
+}
+
+
+
+
+
+
+.contact .container {
+    font-size: 20px;
+}
+
+
+.phone-svg {
+    width: 20px;
+}
+
+.contact {
+    color: #333;
+}
+
+.contact .title {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Sedan Regular';
+}
+
+.contact .container {
+    padding-top: 5rem;
+    height: 21rem;
+    text-align: center;
+}
+
+.contact .top  {
+    padding-top: 5rem;
+}
+.contact p {
+    padding-bottom: 1rem;
+}
+
+.tictactoe-img img {
+    width: 220px;
+}
+
+
+
+
+
+
+
+
+footer {
+    background: #333;
+}
+
+footer .container {
+    display: flex;
+    height: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    font-family: 'Sedan Regular';
+}
+
+.nav-button {
+    position: absolute;
+    right: 1.4rem;
+    top: 0.6rem;
+}
+
+.nav-button .bar {
+    font-size: 25px;
+    display: none;
+}
+
+.nav-button .x {
+    font-size: 25px;
+    display: none;
+}
+
+@media screen and (max-width: 1330px) and (min-width: 1055px) {
+    
+    .container {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width:1054px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .project-item {
+        grid-template-columns: repeat(1,1fr);
+        width: 100%
+    }
+
+    .project_wrap {
+        height: 104rem;
+    }
+}
+
+@media screen and (max-width:875px) {
+    .nav-button .show {
+        display: block;
+        z-index: 2000;
+    }
+
+
+    .nav_wrapper {
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-around;
+        min-height: 3rem;
+        height: auto;
+    }
+    
+    .nav_title {
+        justify-content: center;
+        padding: 0.91rem 0 1rem 1.5rem;
+    }
+
+
+    
+    .nav_link {
+        flex-direction: column;
+        padding-left: 1rem;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav_link.hide {
+        display: none;
+    }
+
+    .nav_link li {
+        padding: 1rem 0;
+    }
+
+
+    .welcome {
+        grid-template-columns: repeat(1,1fr);
+        height: 50rem;
+    }
+
+    .about-me_wrap {
+        grid-template-columns: repeat(1,1fr);
+        max-width: 100%;
+    }
+    
+    .about-me {
+        height: 25rem;
+    }
+
+    .about-me_wrap p {
+        padding-left: 2rem;
+        width: 20rem;
+        padding-bottom: 2rem;
+    }
+
+    .skills {
+        height: 50rem;
+    }
+    .skills-item {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 2rem;
+    }
+
+    .skills_wrap {
+        max-width: 30rem;
+    }
+}
+
+@media screen and (max-width:504px) {
+    .project-item > .card {
+        width: 300px;
+        height: 220px
+    }
+
+    .about-me_wrap p {
+        padding-left: 1rem;
+    }
+
+    .project-img img {
+        object-fit: cover;
+        width: 250px;
+    }
+    .tictactoe-img img {
+        width: 120px;
+    }
+
+    .mypic img {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .project-item .card p {
+        font-size: 16px;
+    }
+
+    .digit_cnn {
+        padding-top: 1rem;
+    }
+
+    .nav_link{
+        padding-left: 0;
+    }
+
+    .project_wrap {
+        height: 74rem;
+    }
+
+    .skills-item .card {
+        height: 10rem;
+        width: 8rem;
+    }
+
+    .python-img {
+        margin: 0 auto;
+    }
+    
+    .python-img img{
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .java-img img {
+        width: 6rem;
+        height: 6rem;
+    }
+    .java-img {
+        padding-top: 1.2rem;
+    }
+
+    .javascript-img img {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .javascript-img {
+        padding-top: 1.2rem;
+    }
+
+
+    .c-img img {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    .c-img {
+        padding-top: 0.8rem;
+    }
+
+    .skills-item .card p {
+        font-size: 14px;
+        bottom: 0.9rem;
+    }
+
+    .skills {
+        height: 45rem;
+    }
+
+    
+
+    footer {
+        font-size: 10px;
+    }
+}
